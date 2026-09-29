@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автомобили — Noble Nectars</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <!-- При встраивании в сайт удалите эти preview-стили -->
+    <style>
+      body {
+        margin: 0;
+        background: #0d0804;
+        display: flex;
+        justify-content: center;
+        padding: 48px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="car-inner">
+      <h1>Выбор авто</h1>
+      <label for="car-select">Автомобиль</label>
+      <select id="car-select" disabled></select>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <section id="car-info" class="car-info" aria-live="polite" hidden>
+        <p id="car-name"></p>
+        <p id="car-price"></p>
+      </section>
+    </main>
+  </body>
+</html>

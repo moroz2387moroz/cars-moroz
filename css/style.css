@@ -1,0 +1,100 @@
+.car-inner,
+.car-inner * {
+  box-sizing: border-box;
+}
+
+.car-inner {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  background-color: #1a1008;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.car-inner h1 {
+  margin: 0 0 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #f0e6d2;
+  text-align: center;
+}
+
+.car-inner label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9e8c76;
+}
+
+.car-inner select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 44px 0 16px;
+  border: 1px solid #4a3728;
+  border-radius: 2px;
+  background-color: #251508;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239e8c76' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #e8dece;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.car-inner select:hover:not(:disabled) {
+  border-color: #7a5c3e;
+}
+
+.car-inner select:focus-visible {
+  outline: 2px solid #9e8c76;
+  outline-offset: 2px;
+  border-color: #9e8c76;
+}
+
+.car-inner select:disabled {
+  background-color: #1a1008;
+  color: #5a4a3a;
+  cursor: default;
+  opacity: 0.6;
+}
+
+.car-inner .status {
+  min-height: 20px;
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #9e8c76;
+}
+
+.car-inner .status--error {
+  color: #c0614e;
+}
+
+.car-inner .car-info {
+  margin-top: 28px;
+  padding-top: 24px;
+}
+
+.car-inner .car-info p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #c8b89a;
+}
+
+.car-inner .car-info p:last-child {
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #f0e6d2;
+  letter-spacing: 0.01em;
+}
